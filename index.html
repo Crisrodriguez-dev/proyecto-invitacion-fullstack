@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween Party 🎃</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="banner">
+        <!-- ICONO MUSICAL -->
+        <div class="music-control">
+            <audio id="bg-music" loop>
+                <source src="musicaHalloween.mp3" type="audio/mpeg">
+                Tu navegador no soporta audio HTML5.
+            </audio>
+            <img id="music-icon" src="./img/fantasmita.png" alt="Música" />
+        </div>
+        <div class="titulohalloween">
+            <p class="happy">Happy<span class="no-glow-bat">🦇</span></p>
+            <h1>
+                <span style="--i:1;">H</span><span style="--i:2;">a</span><span style="--i:3;">l</span><span style="--i:4;">l</span><span style="--i:5;">o</span><span style="--i:6;">w</span><span style="--i:7;">e</span><span style="--i:8;">e</span><span style="--i:9;">n</span>
+            </h1>
+            <img src="./img/colgantes.png" class="colgantes" alt="">
+        </div>
+        <div class="detalles">
+            <div class="parrafo">
+                Te invito a celebrar una noche extraordinaria 🎃
+            </div>
+            <div class="info-grid">
+                <div class="hora">
+                    <h2>Día y Horario:</h2>
+                    <p>Sábado 31 de Octubre, 21:00 hs</p>
+                </div>
+                <div class="tarjeta">
+                        <h2>Ubicación:</h2>
+                        <p>Av. 9 de Julio, Cdad. Autónoma de Bs. As.</p>
+                        <a href="https://maps.app.goo.gl/rNAGGBnHWcHjq5Ji9" target="_blank" class="btn-mapa">¿Cómo llegar?</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contador-container">
+            <h2>Falta:</h2>
+            <div id="countdown">
+                <span id="days">00</span> Días
+                <span id="hours">00</span> Horas
+                <span id="minutes">00</span> Minutos
+                <span id="seconds">00</span> Segundos
+            </div>
+        </div>
+
+        <div class="disfraz-reminder">
+            ¡No te olvides tu disfraz! 👻
+        </div>
+
+        <!-- ===== INICIO DE NUEVO FORMULARIO ===== -->
+        <div class="form-container">
+            <h2>Confirma y sugiere música:</h2>
+            <form id="rsvp-form">
+                <div class="form-group">
+                    <label for="nombre">Tu Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label>¿Asistirás?</label>
+                    <select id="confirma" name="confirma" required>
+                        <option value="">-- Elige una opción --</option>
+                        <option value="Si, allí estaré!">¡Sí, allí estaré! 🎃</option>
+                        <option value="No podré :(">No podré :(</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="cancion">¿Qué canción no puede faltar?</label>
+                    <input type="text" id="cancion" name="cancion" placeholder="Ej: Thriller - Michael Jackson">
+                </div>
+                <div class="form-group">
+                    <input type="submit" id="submit-btn" value="Enviar respuesta">
+                </div>
+            </form>
+            <div id="form-response"></div>
+        </div>
+
+        <div class="confirmar-wpp">
+            <p>O si prefieres, confirma por WhatsApp</p>
+            <a href="https://wa.me/549XXXXXXXXX?text=¡Hola!%20Confirmo%20mi%20asistencia%20a%20la%20fiesta%20de%20Halloween!%20🎃"
+                 target="_blank" class="btn-wpp">
+                💀⚰️ Confirmar por WhatsApp
+            </a>
+        </div>
+
+    </section>
+
+    <footer>
+        <a href="mailto:crisrodriguez.dev@gmail.com">🕸️ Contacto🕷️</a>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

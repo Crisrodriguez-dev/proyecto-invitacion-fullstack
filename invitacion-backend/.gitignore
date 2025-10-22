@@ -1,0 +1,18 @@
+Este archivo le dice a Git qué archivos IGNORAR y NO subir a GitHub.
+
+1. Ignorar todas las dependencias (se instalan con npm install)
+
+Esto es vital para que tu repositorio sea ligero.
+
+node_modules/
+
+2. Ignorar el archivo de variables de entorno (¡CONTIENE CONTRASEÑA!)
+
+Esta es la línea MÁS IMPORTANTE por seguridad.
+
+.env
+
+3. Archivos de log y del sistema operativo (Opcional pero recomendado)
+
+.DS_Store
+npm-debug.log
