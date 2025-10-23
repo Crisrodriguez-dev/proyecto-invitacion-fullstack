@@ -55,7 +55,7 @@ const submitButton = document.getElementById('submit-btn');
 const formResponse = document.getElementById('form-response');
 
 // Esta es la URL del backend 
-const scriptURL = 'https://https://invitacion-backend-fwsa.onrender.com/';
+const scriptURL = 'https://https://invitacion-backend-fwsa.onrender.com/api/confirmar';
 
 if (rsvpForm) {
     rsvpForm.addEventListener('submit', e => {
